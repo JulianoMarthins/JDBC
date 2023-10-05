@@ -13,28 +13,32 @@ public class Department implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer id;
-    private String name;
+    private Integer departmentId;
+    private String departmentName;
 
     public Department(int id, String name) {
-        this.id = id;
-        this.name = name;
+        this.departmentId = id;
+        this.departmentName = name;
+    }
+
+    public Department(){
+
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.departmentId = id;
     }
 
     public Integer getId() {
-        return this.id;
+        return this.departmentId;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.departmentName = name;
     }
 
     public String getName() {
-        return this.name;
+        return this.departmentName;
     }
 
     @Override
@@ -42,12 +46,12 @@ public class Department implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
-        return Objects.equals(id, that.id);
+        return Objects.equals(departmentId, that.departmentId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(departmentId);
     }
 
     public String toString() {
