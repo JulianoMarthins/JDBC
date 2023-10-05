@@ -51,6 +51,6 @@ public class Department implements Serializable {
     }
 
     public String toString() {
-        return "--------------------\n" + "Id: " + getId() + "\nName: " + getName();
+        return "--------------------\nDepartment:\nId: " + getId() + "\nName: " + getName();
     }
 }
