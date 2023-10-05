@@ -1,4 +1,4 @@
-package com.julianoMarthins;
+package com.julianoMarthins.aulas;
 
 import com.julianoMarthins.jdbc.DB;
 

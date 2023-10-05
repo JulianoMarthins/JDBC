@@ -1,4 +1,4 @@
-package com.julianoMarthins;
+package com.julianoMarthins.aulas;
 
 public class DataAccessObject {
 
