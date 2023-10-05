@@ -88,8 +88,8 @@ public class Seller implements Serializable {
     }
 
     public String toString() {
-        return "--------------------\nSeller:\n" + "Id: " + getId() + "\nName: " + getName() + "\nE-mail: " + getEmail()
-                + "\nBirth Date: " + getBirthDate() + "\nBase Salary: " + getBaseSalary() + "\nDepartment: "
-                + getDepartment();
+        return "----------------------------------------\nSeller:\n" + "Id: " + getId() + "\nName: " + getName()
+                + "\nE-mail: " + getEmail() + "\nBirth Date: " + getBirthDate() + "\nBase Salary: "
+                + String.format("R$ %.2f",getBaseSalary()) + "\n" + getDepartment();
     }
 }
