@@ -21,7 +21,7 @@ public class Department implements Serializable {
         this.departmentName = name;
     }
 
-    public Department(){
+    public Department() {
 
     }
 
