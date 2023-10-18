@@ -1,11 +1,13 @@
 package com.julianoMarthins;
 
-import java.util.Date;
+
 
 import com.julianoMarthins.model.dao.DaoFactory;
 import com.julianoMarthins.model.dao.SellerDao;
 import com.julianoMarthins.model.entities.Department;
 import com.julianoMarthins.model.entities.Seller;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +19,13 @@ public class Main {
 
         System.out.println(seller);
 
+        System.out.println("\n\n=== Test 2: Seller findByDepartment ===" );
+        Department department = new Department(2, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+
+        for(Seller obj : list){
+            System.out.println(obj);
+        }
 
 
     }
